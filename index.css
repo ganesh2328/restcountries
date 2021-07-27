@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+  }
+  
+  .user-flag {
+    width: 200px;
+    height: 125px;
+    border: solid 2px black;
+  }
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    justify-content: center;
+    column-gap: 10px;
+  }
+  .user-name{
+    font-size: 100%;
+  }
+  .user-container {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    row-gap: 5px;
+    padding-bottom: 5px;
+    box-shadow: 3px 3px rgb(48, 77, 77);
+    border-radius: 3px;
+  }
+  @media (max-width: 900px) {
+    .user-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .user-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .user-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
